@@ -4,25 +4,25 @@
     "${workspaceFolder}/__pypackages__/3.10/lib"
   ],
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#ffe9ec",
-    "activityBar.background": "#ffe9ec",
+    "activityBar.activeBackground": "#f5aeae",
+    "activityBar.background": "#f5aeae",
     "activityBar.foreground": "#15202b",
     "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#1abf00",
+    "activityBarBadge.background": "#128e12",
     "activityBarBadge.foreground": "#e7e7e7",
     "commandCenter.border": "#15202b99",
-    "sash.hoverBorder": "#ffe9ec",
-    "statusBar.background": "#ffb6c1",
+    "sash.hoverBorder": "#f5aeae",
+    "statusBar.background": "#f08080",
     "statusBar.foreground": "#15202b",
-    "statusBarItem.hoverBackground": "#ff8396",
-    "statusBarItem.remoteBackground": "#ffb6c1",
+    "statusBarItem.hoverBackground": "#eb5252",
+    "statusBarItem.remoteBackground": "#f08080",
     "statusBarItem.remoteForeground": "#15202b",
-    "titleBar.activeBackground": "#ffb6c1",
+    "titleBar.activeBackground": "#f08080",
     "titleBar.activeForeground": "#15202b",
-    "titleBar.inactiveBackground": "#ffb6c199",
+    "titleBar.inactiveBackground": "#f0808099",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#ffb6c1",
+  "peacock.color": "#f08080",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   }
