@@ -11,9 +11,11 @@ class Livro(models.Model):
     categoria = models.ForeignKey(
         Categoria, on_delete=models.PROTECT, related_name="livros", null=True, blank=True
     )
+
     editora = models.ForeignKey(
         Editora, on_delete=models.PROTECT, related_name="livros", null=True, blank=True
     )
+    
     autores = models.ManyToManyField(
         Autor, related_name="livros", blank=True
     )

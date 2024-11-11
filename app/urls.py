@@ -17,8 +17,8 @@ router = DefaultRouter()
 router.register(r"categorias", CategoriaViewSet) 
 router.register(r"usuarios", UserViewSet, basename="usuarios")
 router.register(r"editoras", EditoraViewSet)
-router.register(r"autor", AutorViewSet)
-router.register(r"livro", LivroViewSet)
+router.register(r"autores", AutorViewSet)
+router.register(r"livros", LivroViewSet)
 
 
 urlpatterns = [
