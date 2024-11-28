@@ -6,10 +6,11 @@ from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
+    AbstractUser
 )
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-
+from uploader.models import Image
 
 class UserManager(BaseUserManager):
     """Manager for users."""
@@ -70,6 +71,15 @@ class User(AbstractBaseUser, PermissionsMixin):
         help_text=_("Indica que este usuário pode acessar o Admin.")
     )
 
+    foto = models.ForeignKey(
+        Image,
+        related_name="+",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        default=None,
+    )
+
     objects = UserManager()
 
     USERNAME_FIELD = "email"
@@ -80,3 +90,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
         verbose_name = "Usuário"
         verbose_name_plural = "Usuários"
+    
+    
+
