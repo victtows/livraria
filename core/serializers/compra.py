@@ -1,4 +1,4 @@
-from rest_framework.serializers import CharField, ModelSerializer, SerializerMethodField
+from rest_framework.serializers import CharField, ModelSerializer, SerializerMethodField, CurrentUserDefault, HiddenField
 
 
 from core.models import Compra, ItensCompra
@@ -29,6 +29,7 @@ class CompraSerializer(ModelSerializer):
 
 
 class CompraCreateUpdateSerializer(ModelSerializer):
+    usuario = HiddenField(default=CurrentUserDefault())
     itens = ItensCompraCreateUpdateSerializer(many=True)
 
     class Meta:
